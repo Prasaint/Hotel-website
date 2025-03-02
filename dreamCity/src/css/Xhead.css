@@ -1,0 +1,93 @@
+/* Xhead.css */
+@import "./App.css";
+
+/* Sticky header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 109;
+}
+
+/* Header container */
+.home {
+  background-color: var(--Scolor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.title {
+  font-size: xx-large;
+  font-weight: bold;
+  color: white;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  transition: transform 0.3s ease-out;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.nav-links a.active {
+  color: #ff6b6b !important;
+  font-weight: bolder;
+}
+
+/* Menu button for mobile */
+.menu-btn {
+  display: none; /* Hide by default */
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white; /* Ensure the icon is visible */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .home {
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    display: none; /* Hide nav links on smaller screens */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    right: 20px;
+    background-color: #0f172b;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    transform: translateX(100%);
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+    display: flex; /* Show nav links when menu is open */
+  }
+
+  .menu-btn {
+    display: block; /* Show menu button on smaller screens */
+  }
+
+  .title {
+    font-size: x-large;
+  }
+
+  .nav-links a {
+    font-size: x-small;
+  }
+}

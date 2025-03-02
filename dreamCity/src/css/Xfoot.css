@@ -1,0 +1,88 @@
+.fot {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #0f172b;
+  color: white;
+}
+.fot h1 {
+  color: #fea116;
+}
+.Fcontainer1 {
+  margin: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.Fhdetail {
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 20%;
+  background-color: #fea116;
+  box-shadow: 0 1px 1px #fea116;
+}
+.Fhdetail h1 {
+  font-size: large;
+  color: white;
+}
+.Fhdetail p {
+  text-align: justify;
+}
+.Fcontact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 6px;
+}
+.Fcontact .ficon {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 6px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.Fcontact h1 {
+  font-size: large;
+}
+.Fcompany {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 6px;
+}
+.Fcompany h1 {
+  font-size: large;
+}
+
+.Fcontainer2 {
+  margin: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-top: 1px solid rgb(203, 203, 203);
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.Fcontainer2 .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 12px;
+}
+.Fcontainer2 a {
+  font-size: small;
+  border-left: 1px solid rgb(203, 203, 203);
+  padding-left: 4%;
+}
+.Fcontainer2 p {
+  font-size: small;
+}

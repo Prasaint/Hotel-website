@@ -1,0 +1,98 @@
+#booking {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.bsec1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.bsec1 h1 {
+  font-size: large;
+  color: #f4b400;
+}
+.bsec1 h2 {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.bsec2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.bsec2 form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bsec2 div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ib {
+  width: 48%;
+  height: 44px;
+  font-size: large;
+  padding-left: 8px;
+}
+.sb {
+  width: 49%;
+  height: 44px;
+  font-size: large;
+  padding-left: 8px;
+}
+.sbf {
+  width: 100%;
+  height: 44px;
+  font-size: large;
+  padding-left: 8px;
+}
+.tb {
+  width: 100%;
+  height: 64px;
+  font-size: large;
+  padding-left: 8px;
+  padding-top: 8px;
+}
+.bsec2 .buttonf {
+  width: 100%; /* Full width of the container */
+  height: 44px; /* Fixed height */
+  color: white; /* Text color */
+  font-size: x-large; /* Use rem units for better scalability */
+  font-weight: bold; /* Bold text */
+  background-color: #fea116; /* Orange background */
+  text-align: center; /* Center-align text */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Slightly rounded corners for a modern look */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover state */
+.bsec2 .buttonf:hover {
+  background-color: #e68a00; /* Darker shade of orange on hover */
+}
+
+/* Active state (when clicked) */
+.bsec2 .buttonf:active {
+  background-color: #cc7a00; /* Even darker shade for active state */
+}
+
+/* Focus state (for accessibility) */
+.bsec2 .buttonf:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 3px rgba(254, 161, 22, 0.5); /* Add a focus ring for accessibility */
+}
+.bsec2 label {
+  font-size: x-large;
+  color: dimgrey;
+}

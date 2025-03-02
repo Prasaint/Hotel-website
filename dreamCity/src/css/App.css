@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("App.css");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 11px;
+}
+:root {
+  /*Colors*/
+  --Pcolor: #fea116; /* Primary color */
+  --Scolor: #0f172b; /* Secondary color */
+}
+.allpage {
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+  min-height: 80vh;
+  height: auto;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+html {
+  position: relative;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+span {
+  color: var(--Pcolor);
+  font-size: inherit;
+  padding-left: 2px;
+}
+.active {
+  color: var(--Pcolor);
+}
+@media (max-width: 768px) {
+  .allpage {
+    width: 92%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 15%;
+  }
+}
+.allpage {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.allpage.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/*Whatsapp Animation*/
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 40px;
+  right: 60px;
+  z-index: 50;
+  cursor: pointer;
+  animation: bounce 1s infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.whatsapp p {
+  background-color: rgb(146, 146, 146);
+  padding: 4px;
+  border-radius: 4px;
+  display: none;
+  text-align: center;
+}
+:hover.whatsapp p {
+  display: block;
+}
